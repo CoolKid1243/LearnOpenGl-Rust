@@ -13,9 +13,10 @@ fn main() {
     glfw.window_hint(glfw::WindowHint::ContextVersionMinor(1));
     glfw.window_hint(glfw::WindowHint::OpenGlProfile(glfw::OpenGlProfileHint::Core));
     glfw.window_hint(glfw::WindowHint::OpenGlForwardCompat(true)); // For macOS
+    
     // Create and setup window
     let (mut window, events) = glfw
-        .create_window(1200, 900, "Virtual Universe!", glfw::WindowMode::Windowed)
+        .create_window(1200, 900, "LeanOpenGL - Rust", glfw::WindowMode::Windowed)
         .expect("Failed to create GLFW window.");
     window.make_current();
     window.set_key_polling(true);
